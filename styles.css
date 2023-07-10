@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office&display=swap');
+
+:root {
+  --corporate-brown: #4d302d;
+  --corporate-red:#af1f24;
+  --corporate-orange: #e1c092;
+  --corporate-grey: #544040;
+  --logo-background: #ebe4d2;
+  --background-header: whitesmoke;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--corporate-brown);
+  color: var(--background-header);
+  font-family:'Ysabeau Office', sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  font-size: 2.5em;
+  font-family: 'Amatic SC', cursive;
+  margin: 0;
+  background-color: var(--background-header);
+  color: var(--corporate-brown);
+  display: flex;
+ 
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-end;
+  align-content: stretch;
+  justify-content: space-around;
+}
+
+#header-img {
+  width: 250px;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: 'Amatic SC', cursive;
+  text-shadow: var(--corporate-grey) 1px 1px 2px;
+  color: var(--corporate-red);
+}
+
+h1 {
+  font-size: 4em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-bottom: auto;
+  
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h2,p {
+  margin: 0;
+}
+
+.feature{
+  margin: 2em auto;
+}
+
+#maindoc{
+  width: 60%;
+  margin: 0 auto;
+}
+
+#navbar{
+  /*display: inline-block; */
+  width: 100%; 
+}
+
+a {
+  color: var(--corporate-brown);
+  padding: 1em;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 2em;
+  }
+  #header-img {
+    width: 150px;
+  }
+}
